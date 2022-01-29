@@ -142,6 +142,7 @@ class CommandRequest( BaseRequest ):
       vimsupport.JumpToLocation( self._response[ 'filepath' ],
                                  self._response[ 'line_num' ],
                                  self._response[ 'column_num' ],
+                                 self._response[ 'file_only' ],
                                  modifiers,
                                  buffer_command )
 
