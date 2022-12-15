@@ -150,6 +150,8 @@ class DiagnosticInterface:
       else:
         marker = '>'
 
+      marker = '•'
+
       MakeVritualTextProperty(
         'YcmVirtDiagPadding',
         ' ' * vim.buffers[ self._bufnr ].options[ 'shiftwidth' ] ),
