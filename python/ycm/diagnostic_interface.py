@@ -146,11 +146,9 @@ class DiagnosticInterface:
                                     } )
 
       if vim.options[ 'ambiwidth' ] != 'double':
-        marker = '⚠'
+        marker = '⛔' if _DiagnosticIsError( first_diag ) else '⚠️'
       else:
         marker = '>'
-
-      marker = '•'
 
       MakeVritualTextProperty(
         'YcmVirtDiagPadding',
